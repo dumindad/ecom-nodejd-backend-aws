@@ -16,7 +16,7 @@ jobs:
       - name: Build Docker Image
         run: docker build -t terr97us/nodejs-app .
       - name: Publish Image to docker hub
-          run: docker push -t terr97us/nodejs-app:latest 
+        run: docker push -t terr97us/nodejs-app:latest 
 
   deploy:
     needs: build
